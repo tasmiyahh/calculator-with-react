@@ -1,0 +1,79 @@
+.keypad{
+    flex: 1.3;
+    background-color: var(  --bg-color-1);
+    /* background-color: black; */
+   width: 280px;
+    padding: 20px;
+    display: flex;
+    cursor: pointer;
+}
+
+.keypad p{
+    line-height: 1.875rem;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms;
+    color: var(--text-color-2);
+   
+}
+.keypad-keys{
+    flex: 3;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.keypad-keys p{
+    width: 33%;
+    height: 25%;
+}
+.keypad-keys p:active {
+    background-color:rgba(0,0,0,0.14)
+}
+.keypad-symbols{
+    flex: 1;
+}
+
+.keypad-symbols p{
+    width: 100%;
+    height: 20%;
+    color: #89a5f1;
+}
+
+.item{
+    width: 60px;
+    height: 50px;
+    border: 1px solid  var(  --bg-color-2);
+    background:  var(  --bg-color-2);
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    margin: 2px;
+  padding-top: 4px;
+}
+
+.symbol{
+    width: 50px;
+    height: 40px;
+    border: 1px solid #F69906;
+    background-color:#F69906;
+    border-radius: 50%;
+    color:black;
+    text-align: center;
+    margin: 4px;
+    padding-top:2px ;
+
+}
+
+.item:hover{
+    background-color: #808080;
+}
+
+.symbol:hover{
+    background-color: var(  --bg-color-3);
+}
+
+.symbol>p{
+    text-align: center;
+}
