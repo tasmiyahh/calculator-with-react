@@ -95,7 +95,12 @@ function App() {
   }
 
   const calculateresult = (exp) => { //ye apne under expression le ga
-    if (!exp) return; //agr exp nh tw return
+    if (!exp) {
+      setResult("0")
+      return;
+    }
+ 
+   //agr exp nh tw return
     const lastchar = exp.slice(-1)
 
     if (!numbers.includes(lastchar)) exp = exp.slice(0, -1) //agr operator  ho last char tw hata do
